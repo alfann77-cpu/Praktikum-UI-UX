@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Web Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
+        nav { background-color: #6e1585; color: white; padding: 10px; margin-bottom: 20px; }
+        nav ul { list-style: none; padding: 0; margin: 0; display: flex; justify-content: space-around; }
+        nav li { display: inline; }
+        nav a { color: white; text-decoration: none; padding: 10px; }
+        .container { display: flex; gap: 20px; max-width: 800px; margin: auto; }
+        .left-panel { flex: 1; border: 1px solid #ddd; padding: 20px; background: white; }
+        .right-panel { flex: 1; border: 1px solid #ddd; padding: 20px; background: white; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 8px; border: 1px solid #ccc; box-sizing: border-box; }
+        .upload-placeholder { width: 100%; height: 150px; border: 2px dashed #ccc; display: flex; align-items: center; justify-content: center; background: #f0f0f0; }
+        .checkbox-group { display: flex; align-items: center; gap: 10px; }
+        button { background-color: hsl(216, 75%, 57%); color: white; padding: 10px 20px; border: none; cursor: pointer; font-size: 16px; }
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Generate Link</a></li>
+            <li><a href="#">Transaction History</a></li>
+            <li><a href="#">Policy</a></li>
+            <li><a href="#">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div class="left-panel">
+            <h2></h2>
+            <img src="Laptop.jpg" width="200px" auto>
+            
+        </div>
+
+        <div class="right-panel">
+            <h2>Transaction</h2>
+            <form>
+                <div class="form-group">
+                    <label for="title">Title Here:</label>
+                    <span>Tecno Megabook T1</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="condition">Condition:</label>
+                    <span>New</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="model">Model:</label>
+                    <span>2025</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="accountNumber">Account Number:</label>
+                    <input type="text" id="accountNumber" name="accountNumber" value="" placeholder="Enter account number">
+                </div>
+
+                <div class="form-group">
+                    <label for="Bank">Bank:</label>
+                    <input type="text" id="Bank" name="Bank" value="" placeholder="Enter bank name">
+                </div>
+
+                <div class="form-group">
+                    <label for="accountHolder">Account Holder:</label>
+                    <input type="text" id="accountHolder" name="accountHolder" value="" placeholder="Enter account holder name">
+                </div>
+               
+                <div class="box-input">
+                    <label for="Transaction">Transaction:</label> 
+                    <select id="Transaction" name="Transaction">
+                        <option value="sell">1</option>
+                        <option value="rent">2</option>
+                        <option value="donate">3</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="sendToMobile">Send to Mobile:</label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" value="" placeholder="Enter phone number">
+                </div>
+
+                <div class="form-group">
+                    <label for="sendToEmail">Send to Email:</label>
+                    <input type="email" id="email" name="email" value="" placeholder="Enter your email">
+                </div>
+              
+                <button type="submit">Generate Link</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
